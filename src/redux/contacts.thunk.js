@@ -20,7 +20,6 @@ export const deleteContactsThunk = createAsyncThunk(
 export const addContactsThunk = createAsyncThunk(
   'contacts/addContact',
   async (contact) => {
-    console.log(contact);
     const { data } = await mokaAPI.post('/contacts', { ...contact });
     return data;
   }

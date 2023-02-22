@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
-import { getContactsValue } from 'redux/contactsSlice';
+import { setContactsValue } from 'redux/contactsSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { addContactsThunk } from 'redux/contacts.thunk';
 
 export const Form = () => {
   const [name, setName] = useState('');
   const [number, setnumber] = useState('');
-  const contacts = useSelector(getContactsValue);
+  const contacts = useSelector(setContactsValue);
   const dispatch = useDispatch();
   const addContactToState = contact => dispatch(addContactsThunk(contact));
 

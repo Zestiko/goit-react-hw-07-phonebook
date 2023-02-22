@@ -67,3 +67,11 @@ button:hover {
   background-color:#fff;
   color: darkseagreen;
 }
+
+
+.loader {
+  width: 129px;
+}
+ul {
+  padding: 0;
+}
