@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   setContactsValue,
   setIsLoading,
-  setfilterContacts,
 } from 'redux/contactsSlice';
 import PropTypes from 'prop-types';
 import { setFilterValue } from 'redux/filterSlice';
