@@ -4,7 +4,7 @@ import {
   deleteContactsThunk,
   addContactsThunk,
 } from './contacts.thunk';
-import { setFilterValue } from './filterSlice';
+// import { setFilterValue } from './filterSlice';
 
 const contactsInitialState = {
   items: [],
