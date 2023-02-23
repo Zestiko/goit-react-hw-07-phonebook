@@ -31,6 +31,7 @@ export const Form = () => {
         return;
     }
   };
+
   const reset = () => {
     setName('');
     setnumber('');
@@ -42,7 +43,6 @@ export const Form = () => {
     if (includeName) {
       alert(`${name} is already in contacs`);
     } else {
-      console.log(createContact({ name, phone: number }));
       addContactToState(createContact({ name, phone:number }));
       reset();
     }
